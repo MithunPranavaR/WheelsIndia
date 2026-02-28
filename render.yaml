@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: coil-backend
+    runtime: python
+    buildCommand: "pip install -r src/backend/requirements.txt"
+    startCommand: "gunicorn backend_project_name.wsgi"
